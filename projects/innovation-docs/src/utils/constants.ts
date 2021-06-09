@@ -7,7 +7,7 @@ export const SAVE_INTERVAL_MS = 2000
 
 export const documentRef = database.ref('editor/documents')
 
-export const socketDev = io('http://localhost:4000')
+export const socketDev = io('https://chain-saw.herokuapp.com')
 export const socket = io('http://localhost:4000')
 
 export const TOOLBAR_OPTIONS: ToolbarOptions = {
