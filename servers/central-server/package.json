@@ -1,0 +1,39 @@
+{
+  "name": "central-server",
+  "version": "0.0.1",
+  "description": "Central Socket Server",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts"
+  },
+  "keywords": [],
+  "author": "rayat69",
+  "license": "MIT",
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/",
+      "dist/",
+      "coverage/"
+    ],
+    "watch": [
+      "src/index.ts"
+    ],
+    "execMap": {
+      "ts": "node ts-node/register"
+    },
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "js,json,ts",
+    "exec": "ts-node"
+  },
+  "dependencies": {
+    "@utils/common": "0.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

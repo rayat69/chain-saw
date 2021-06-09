@@ -1,0 +1,193 @@
+@media screen and (max-width: 768px) {
+  .shit {
+    padding: 22.5px 5%;
+  }
+
+  nav {
+    box-sizing: border-box;
+    display: block;
+    .nav1,
+    .nav2 {
+      //display: none;
+      right: -100%;
+      position: absolute;
+      transition: right 0.3s ease;
+    }
+    .nav1.responsive,
+    .nav2.responsive {
+      right: 10%;
+    }
+    .nav1,
+    .nav2 {
+      //display: block;
+      background-color: hsl(257, 27%, 26%);
+      position: absolute;
+      width: 80vw;
+      border-radius: 10px;
+      z-index: 10;
+    }
+    .nav1 {
+      top: 100px;
+      height: 222px;
+
+      div.navs {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 40px;
+        margin: 0 40px;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        a {
+          display: block;
+          color: #fff;
+          margin: 0;
+        }
+      }
+    }
+    .nav2 {
+      top: 305px;
+      height: 200px;
+
+      .auth {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: space-around;
+        border-top: 2px solid rgba(255, 255, 255, 0.342);
+        padding: 10px 40px 40px;
+        margin: 0 40px;
+        height: 100%;
+        width: 100%;
+
+        a {
+          color: #fff;
+          padding: 2% 20%;
+        }
+
+        // a {
+        //     margin-top: ;
+        // }
+      }
+    }
+    .nav3 {
+      .menu-icon {
+        display: block;
+        float: right;
+        font-size: 2rem;
+        color: hsl(0, 0%, 75%);
+      }
+    }
+
+    .nav4 {
+      float: left;
+    }
+  }
+
+  .shit > header {
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 50%;
+
+      main {
+          .title {
+              h1 {
+                  text-align: center;
+              }
+          }
+          .desc {
+              p {
+                  text-align: center;
+              }
+          }
+          .get-started {
+              display: flex;
+              justify-content: center;
+              a {
+                  padding: 15px 100px;
+                  border-radius: 40px;
+              }
+          }
+      }
+
+      aside {
+        grid-row-start: 1;
+      }
+  }
+
+  main {
+      header {
+          height: 100px;
+          div {
+              input {
+                  font-size: 14px;
+              }
+              button {
+                  font-size: 70%;
+              }
+          }
+      }
+    section {
+      .shortened {
+        padding: 12px 18px;
+        .link-short {
+          h5 {
+            font-size: 0.6em;
+          }
+        }
+
+        .copy-link {
+          button {
+            height: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    .cards-wrap {
+      .cards {
+          &.card2 {
+              margin-left: 15px;
+              margin-right: 15px;
+          }
+        .i {
+          height: 60px;
+          width: 60px;
+          top: -30px;
+          left: 5px;
+        }
+
+        h3 {
+            font-size: 0.9em;
+        }
+
+        p {
+            font-size: 10px;
+        }
+      }
+    }
+  }
+
+  footer {
+      height: auto;
+      grid-template-columns: 50% 50%;
+      .secs {
+          img {
+              margin-left: 5vw;
+              width: 20vw;
+          }
+
+          &.sec2 {
+              //display: block;
+              padding-left: 50px;
+              grid-column-start: 1;
+              grid-column-end: 3;
+              grid-row-start: 2;
+          }
+          &.sec3 {
+              position: relative;
+              right: -40px;
+          }
+      }
+  }
+}

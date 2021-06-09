@@ -1,0 +1,71 @@
+@media screen and (max-width: 992px) {
+  nav {
+    .nav1 div.navs {
+      a {
+        margin-right: 8%;
+        font-size: 16px;
+      }
+    }
+
+    .nav2 .auth {
+      a {
+        margin: auto 1%;
+        padding: 1.5% 6%;
+        font-size: 16px;
+      }
+    }
+  }
+
+  header main {
+    .title {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    .desc {
+      p {
+        font-size: 16px;
+      }
+    }
+    .get-started a {
+      font-size: 16px;
+    }
+  }
+
+  main {
+    section {
+      .shortened {
+        .link-short {
+          h5 {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+
+    header {
+        height: 120px;
+    }
+  }
+
+  section {
+      .advanced {
+          .para {
+              p {
+                  width: 60%;
+              }
+          }
+      }
+  }
+
+  footer {
+      grid-template-columns: 30% 45% 25%;
+
+      .secs {
+          img {
+              margin-left: 70px;
+          }
+      }
+  }
+  
+}

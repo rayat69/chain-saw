@@ -1,0 +1,25 @@
+{
+  "name": "@utils/common",
+  "version": "0.0.1",
+  "description": "Common packages",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./dist/validator": "./dist/validator.js",
+    "./dist/firebase": "./dist/firebase.js",
+    "./dist/admin": "./dist/admin.js"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "common"
+  ],
+  "author": "rayat69",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ]
+}
